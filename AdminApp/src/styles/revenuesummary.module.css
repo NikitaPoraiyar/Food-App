@@ -1,0 +1,99 @@
+.revenuesummary_container{
+    border: 3px solid #D9D9D9;
+    width: 450px;
+    /* padding: 5px; */
+    border: 3px solid #D9D9D9;
+    background-color: #F0F5F3;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.revenuesummary_topcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #D9D9D9;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.revenuesummary_headersection{
+    padding: 10px;
+}
+
+.revenuesummary_headersection > h3{
+    padding-bottom: 5px;
+    color: #6E6E6E;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.revenuesummary_headersection > p{
+    color: #B9B8BE;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.revenuesummary_filtercontainer{
+    /* border: 1px solid black; */
+    padding: 2px;
+    position: relative;
+}
+
+.revenuesummary_filterbtn{
+    border: 2px solid #D9D9D9;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.revenuesummary_filterbtn > p{
+    font-family: "Inter", sans-serif;
+    color: #B9B8BE;
+    font-weight:500;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.revenuesummary_dropdown{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.dailyrevenue_option, .weeklyrevenue_option, .monthlyrevenue_option{
+    font-family: "Inter", sans-serif;
+    border: 2px solid #D9D9D9;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B9B8BE;
+    font-weight:500;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* .dailyrevenue_option>p, .weeklyrevenue_option>p, .monthlyrevenue_option>p{
+    
+    margin-right: 5px;
+} */
+
+.revenuesummary_middlecontainer{
+    padding: 5px;
+}
+
+
+
+

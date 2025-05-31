@@ -1,0 +1,64 @@
+.donutchart_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+        /* border: 1px solid red; */
+
+}
+
+.chartAndLabels {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+        /* border: 1px solid red; */
+
+}
+
+.chartBox {
+    width: 150px;
+    height: 150px;
+        /* border: 1px solid red; */
+
+}
+
+.labelBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 200px;
+        /* border: 1px solid red; */
+
+}
+
+.labelRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+}
+
+.labelText {
+    width: 100px;
+    color: #BBB9BF;
+    font-size: 13px;
+
+}
+
+.percent {
+    color: #C0BFC4;
+}
+
+.progressBar {
+    flex-grow: 1;
+    background-color: #ffff;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: 10px;
+}

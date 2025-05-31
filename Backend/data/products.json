@@ -1,0 +1,42 @@
+{
+    "Burger": [
+        { "name": "Cheese Burger", "price": 150, "image": "cheeseburger", "preparationTime": 10 },
+        { "name": "Chicken Burger", "price": 200, "image": "chickenburger", "preparationTime": 10 },
+        { "name": "Paneer Burger", "price": 190, "image": "paneerburger", "preparationTime": 10 },
+        { "name": "Aloo Tikki Burger", "price": 100, "image": "alootikkiburger", "preparationTime": 10 },
+        { "name": "Burger1", "price": 190, "image": "burger1", "preparationTime": 10 },
+        { "name": "Burger2", "price": 100, "image": "burger2", "preparationTime": 10 }
+    ],
+    "Pizza": [
+        { "name": "Capricciosa", "price": 200, "image": "capricciosapizza", "preparationTime": 10 },
+        { "name": "Sicilian", "price": 150, "image": "sicilianpizza", "preparationTime": 10 },
+        { "name": "Marinara", "price": 90, "image": "marinara", "preparationTime": 10 },
+        { "name": "Pepperoni", "price": 300, "image": "pepperoni", "preparationTime": 10 },
+        { "name": "Pizza1", "price": 90, "image": "pizza1", "preparationTime": 10 },
+        { "name": "Pizza2", "price": 300, "image": "pizza2", "preparationTime": 10 }
+    ],
+    "Drink": [
+        { "name": "Coke", "price": 50, "image": "coke", "preparationTime": 2 },
+        { "name": "Pepsi", "price": 50, "image": "pepsi", "preparationTime": 2 },
+        { "name": "Fanta", "price": 50, "image": "fanta", "preparationTime": 2 },
+        { "name": "Sprite", "price": 50, "image": "sprite", "preparationTime": 2 },
+        { "name": "Drink1", "price": 50, "image": "drink1", "preparationTime": 2 },
+        { "name": "Drink2", "price": 50, "image": "drink2", "preparationTime": 2 }
+    ],
+    "French fries": [
+        { "name": "French Fries", "price": 80, "image": "frenchfries", "preparationTime": 5 },
+        { "name": "Peri Peri French Fries", "price": 80, "image": "periperifries", "preparationTime": 5 },
+        { "name": "Cheese French Fries", "price": 80, "image": "cheesefries", "preparationTime": 5 },
+        { "name": "Masala French Fries", "price": 80, "image": "masalafries", "preparationTime": 5 },
+        { "name": "Fries1", "price": 80, "image": "fries1", "preparationTime": 5 },
+        { "name": "Fries2", "price": 80, "image": "fries2", "preparationTime": 5 }
+    ],
+    "Salads": [
+        { "name": "Veggie Salad", "price": 100, "image": "veggiesalad", "preparationTime": 5 },
+        { "name": "Chicken Salad", "price": 100, "image": "chickensalad", "preparationTime": 5 },
+        { "name": "Soya Salad", "price": 100, "image": "soyasalad", "preparationTime": 5 },
+        { "name": "Paneer Salad", "price": 100, "image": "paneersalad", "preparationTime": 5 },
+        { "name": "Salad1", "price": 100, "image": "salad1", "preparationTime": 5 },
+        { "name": "Salad2", "price": 100, "image": "salad2", "preparationTime": 5 }
+    ]
+}

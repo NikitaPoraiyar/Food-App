@@ -1,0 +1,96 @@
+.ordersummary_container{
+    border: 3px solid #D9D9D9;
+    width: 450px;
+    height: 100%;
+    /* padding: 5px; */
+    border: 3px solid #D9D9D9;
+    background-color: #F0F5F3;
+    border-radius: 10px;
+}
+
+.ordersummary_topcontainer, .ordersummary_middlecontainer, .ordersummary_bottomcontainer{
+    padding: 10px;
+}
+
+.ordersummary_topcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #D9D9D9;
+    margin-bottom: 10px;
+}
+
+.ordersummary_headersection{
+    padding-bottom: 10px;
+}
+
+.ordersummary_headersection > h3{
+    padding-bottom: 5px;
+    color: #6E6E6E;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.ordersummary_headersection > p{
+    color: #B9B8BE;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+.ordersummary_filtercontainer{
+    /* border: 1px solid black; */
+    padding: 2px;
+}
+
+.ordersummary_filterbtn{
+    border: 2px solid #D9D9D9;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ordersummary_filterbtn > p{
+    font-family: "Inter", sans-serif;
+    color: #B9B8BE;
+    font-weight:500;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.ordersummary_middlecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ordersummary_served, .ordersummary_dinein, .ordersummary_takeaway{
+    background-color: #ffff;
+    border: 2px solid #D9D9D9;
+    width: 120px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ordersummary_served>h3, .ordersummary_dinein>h3, .ordersummary_takeaway>h3{
+    font-family: "Inter", sans-serif;
+    color: #7B7E81;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.ordersummary_served>p, .ordersummary_dinein>p, .ordersummary_takeaway>p{
+    font-family: "Inter", sans-serif;
+    color: #B9B8BE;
+    font-weight: 500;
+    font-size: 13px;
+}
+

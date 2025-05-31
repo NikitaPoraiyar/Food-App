@@ -1,0 +1,180 @@
+.tablemanagement_container{
+    background-color: #F0F5F3;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidenav_tablepage{
+    height: 100%;
+}
+
+.tablemanagement_maincontainer{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tablemanagement_searchconatiner{
+    width: 30%;
+    padding-top: 15px;
+}
+
+.tablemanagement_searchbarcircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F2F5F5;
+}
+
+.tableManagement_searchinput{
+    margin-left: 7px;
+    color: #AFABAF;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.tablemanagement_searchbar{
+    background-color: #ffff;
+    width: 70%;
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.tablemanagement_maincontentconatiner{
+    background-color: #ffff;
+    height: 87vh;
+    width: 92vw;
+    border-radius: 20px;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.tablemanagement_maincontentconatiner::-webkit-scrollbar {
+    display: none; 
+}
+
+.tableManagement_headercontainer > h1{
+    color: #565656;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.tableManagement_tablelayout{
+    /* border: 1px solid red; */
+    height: fit-content;
+    /* padding: 0 20px; */
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.table_container{
+    border: 1px solid #BABABA;
+    height: 100px;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F5F3;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.add_tablecontainer{
+    height: 100px;
+    width: 160px;
+    border: 2px dashed #999999;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.add_tablecontainer>p{
+    cursor: pointer;
+}
+
+.tablenumber_container{
+    /* border: 1px solid black; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablenumber_container > h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.tablenumber_container > h1{
+    font-family: "Lato", sans-serif;
+    font-weight:700;
+    font-size: 45px;
+}
+
+.tablefor_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 100px;
+    width: 25%;
+    padding-left: 6px;
+}
+
+.tablefor_container > img{
+    width: 25px;
+    height: 25px;
+}
+
+.tablefor_container> div{
+    display: flex;
+    flex-direction: row;
+}
+
+.tablefor_container> div > p{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.addnewtable_container{
+    display: flex;
+    position: relative;
+}
+
+.popup_addtable{
+    position: absolute;
+    left: 45px;
+}
+
+.deleteimg_btn{
+    cursor: pointer;
+}
+
+
+
+

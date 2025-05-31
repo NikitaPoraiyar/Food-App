@@ -1,0 +1,166 @@
+.dashboard{
+    background-color: #F0F5F3;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard_maincontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    width: 94%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.dashboard_analytics{
+    padding-bottom: 50px;
+}
+
+.filter_container{
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 300px;
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.filter_container > p{
+    font-weight:500;
+    font-family: 'Inter', sans-serif;
+    color: #AFABAF;
+    font-size: 16px;
+    width: 240px;
+    height: 20px;
+}
+
+.filter_dropdown{
+    background-color: #F0F5F3;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dashboard_filteroptions{
+    position: absolute;
+    top: 65px;
+    left: 280px;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.dashboard_filteroptions > div{
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #565656;
+    cursor: pointer;
+    /* background-color:#F0F5F3 ; */
+    margin: 10px;
+}
+
+.dashboard_bottomcontainer{
+    background-color: #ffff;
+    margin-top: 20px;
+    /* height: 82%; */
+    width: 97%;
+    border-radius: 40px;
+    padding: 20px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.dashboard_bottomcontainer::-webkit-scrollbar {
+    display: none; 
+}
+
+.dashboard_bottomcontainer > h2{
+    font-size: 22px;
+    font-weight:500;
+    color: #565656;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+
+.top_analytics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+.totalchef_container, .totalrevenue_container, .totalorders_container, .totalclients_container{
+    border: 3px solid #D9D9D9;
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #F0F5F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalchef_imgcontainer, .totalrevenue_imgcontainer, .totalorders_imgcontainer, .totalclients_imgcontainer{
+    margin-right: 20px;
+}
+
+.totalchef_info>h2, .totalrevenue_info>h2, .totalorders_info>h2, .totalclients_info>h2{
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #626262;
+}
+
+.totalchef_info>p, .totalrevenue_info>p, .totalorders_info>p, .totalclients_info>p{
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+    font-size: 12px;
+    color: #666666;
+}
+
+.totalrevenue_imgcontainer{
+    /* border: 1px solid black; */
+    width: 75px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #E0EFFF;
+}
+
+.middle_analytics{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ordersummary_analyticscontainer, .revenuesummary_analyticscontainer, .tablesummary_analyticscontainer{
+    /* border: 1px solid red; */
+    height: 420px;
+}
+
+.bottom_analytics{
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
