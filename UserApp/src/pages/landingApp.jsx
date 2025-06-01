@@ -72,7 +72,7 @@ function landingApp() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/products`)
+        axios.get('https://food-app-fcb5.onrender.com/api/products')
             .then((response) => {
                 setProductData(response.data);
             })

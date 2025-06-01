@@ -142,7 +142,7 @@ function Cartpage() {
                 }))
             };
 
-            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/order`, orderData);
+            const response = await axios.post('https://food-app-fcb5.onrender.com/api/order', orderData);
             alert("Order Confirmed!!");
             setSelectedProducts([]);
             navigate('/');
