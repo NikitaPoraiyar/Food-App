@@ -72,7 +72,7 @@ function landingApp() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`${import.meta.env.BACKEND_URL}/api/products`)
+        axios.get(`${import.meta.env.REACT_APP_BACKEND_URL}/api/products`)
             .then((response) => {
                 setProductData(response.data);
             })
