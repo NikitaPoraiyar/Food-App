@@ -21,12 +21,13 @@ const __filename = fileURLToPath(import.meta.url);
 // const __dirname = path.dirname(__filename);
 
 dotenv.config();
-app.use(cors());
-// app.use(cors({
-//     origin: '*',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//     credentials: true,
-// }));
+// app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://food-eg4entyfw-nikita-poraiyars-projects.vercel.app/'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+}));
 app.use(bodyParser.json());
 app.use(express.json());
 
