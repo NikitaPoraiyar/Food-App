@@ -6,7 +6,7 @@ function cheftablesummary() {
     const [chefs, setChefs] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/chefs')
+        fetch(`${import.meta.env.BACKEND_URL}/api/chefs`)
             .then(res => res.json())
             .then(data => setChefs(data))
             .catch(err => console.error("Failed to fetch chefs:", err));

@@ -7,7 +7,7 @@ function Tablesummary() {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/tables')
+        fetch(`${import.meta.env.BACKEND_URL}/api/tables`)
             .then(res => res.json())
             .then(data => {
                 console.log("Tables:", data);
@@ -24,7 +24,7 @@ function Tablesummary() {
     }, []);
 
     const fetchOrders = () => {
-        fetch('http://localhost:3000/api/orders')
+        fetch(`${import.meta.env.BACKEND_URL}/api/orders`)
             .then(res => res.json())
             .then(data => {
                 console.log("Orders fetched:", data); 

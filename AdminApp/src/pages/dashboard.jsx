@@ -38,7 +38,7 @@ function dashboard() {
 
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/orders/summary')
+        fetch(`${import.meta.env.BACKEND_URL}/api/orders/summary`)
             .then(res => res.json())
             .then(data => setOrderData(data))
             .catch(err => console.error("Failed to fetch order summary:", err));

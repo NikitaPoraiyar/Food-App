@@ -48,7 +48,7 @@ function LineChartComponent() {
     const [chartData, setChartData] = useState(data);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/orders/revenue/daily')
+        fetch(`${import.meta.env.BACKEND_URL}/api/orders/revenue/daily`)
             .then(res => res.json())
             .then(apiData => {
                 const updatedData = data.map(dayObj => {

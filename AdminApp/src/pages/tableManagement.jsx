@@ -8,7 +8,7 @@ import AddTablePopup from '../components/addtable_popup';
 function tableManagement() {
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/tables')
+    fetch(`${import.meta.env.BACKEND_URL}/api/tables`)
       .then(res => res.json())
       .then(data => setTables(data))
       .catch(err => console.error("Failed to fetch tables:", err));
@@ -20,7 +20,7 @@ function tableManagement() {
 
   const handleDelete = async (idToDelete) => {
   try {
-    const response = await fetch(`http://localhost:3000/api/tables/${idToDelete}`, {
+    const response = await fetch(`${import.meta.env.BACKEND_URL}/api/tables/${idToDelete}`, {
       method: 'DELETE',
     });
 

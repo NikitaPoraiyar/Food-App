@@ -14,7 +14,7 @@ function addtable_popup({ setTables, setShowPopup, tables }) {
         };
 
         try {
-            const response = await fetch('http://localhost:3000/api/tables', {
+            const response = await fetch(`${import.meta.env.BACKEND_URL}/api/tables`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newTable)

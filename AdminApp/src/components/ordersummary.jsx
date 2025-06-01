@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/ordersummary.module.css';
 import DropdownImg from '../assets/dropdown_img.png';
 import DonutChart from '../components/ordersummarydonutchart.jsx';
-// import axios from 'axios';
 
 
 
@@ -16,7 +15,7 @@ function ordersummary() {
     useEffect(() => {
         const fetchOrderSummary = async () => {
             try {
-                const response = await fetch('/api/orders/summary'); // adjust path as per your proxy setup
+                const response = await fetch(`${import.meta.env.BACKEND_URL}/api/orders/summary`);
                 const data = await response.json();
                 setSummary({
                     dineInOrdersCount: data.dineInOrdersCount,

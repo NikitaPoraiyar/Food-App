@@ -22,27 +22,13 @@ const __filename = fileURLToPath(import.meta.url);
 dotenv.config();
 // app.use(cors());
 app.use(cors({
-    origin: '*',
+    origin: 'https://food-app-fcb5.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
 app.use(bodyParser.json());
 app.use(express.json());
 
-// const connectDB = async () => {
-//     try {
-//         await mongoose.connect(process.env.MONGODB_URI, {
-//             useNewUrlParser: true,
-//             useUnifiedTopology: true
-//         });
-//         console.log("Connected to MongoDB");
-//     } catch (error) {
-//         console.error("Error connecting to MongoDB:", error);
-//         process.exit(1);
-//     }
-// };
-
-// connectDB();
 
 const connectDB = async () => {
     try {
@@ -52,7 +38,7 @@ const connectDB = async () => {
         });
         console.log("Connected to MongoDB");
 
-        await initializeChefs(); // ← initialize default chefs here
+        await initializeChefs(); 
 
     } catch (error) {
         console.error("Error connecting to MongoDB:", error);

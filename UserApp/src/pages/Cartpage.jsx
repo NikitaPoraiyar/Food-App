@@ -142,7 +142,7 @@ function Cartpage() {
                 }))
             };
 
-            const response = await axios.post('http://localhost:3000/api/order', orderData);
+            const response = await axios.post(`${import.meta.env.BACKEND_URL}/api/order`, orderData);
             alert("Order Confirmed!!");
             setSelectedProducts([]);
             navigate('/');

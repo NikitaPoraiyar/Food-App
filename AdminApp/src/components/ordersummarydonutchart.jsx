@@ -2,13 +2,6 @@ import React from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import styles from '../styles/donutchart.module.css';
 
-// const data = [
-//     { name: 'Take Away', value: 24 },
-//     { name: 'Served', value: 41 },
-//     { name: 'Dine in', value: 35 },
-// ];
-
-// const COLORS = ['#5B5B5B', '#828282', '#2C2C2C'];
 
 function ordersummarydonutchart({ dineIn = 0, takeAway = 0 }) {
 
@@ -43,7 +36,6 @@ function ordersummarydonutchart({ dineIn = 0, takeAway = 0 }) {
                     </ResponsiveContainer>
                 </div>
 
-                {/* Labels + Bars */}
                 <div className={styles.labelBox}>
                     {data.map((item, index) => (
                         <div key={index} className={styles.labelRow}>
