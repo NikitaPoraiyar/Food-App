@@ -5,7 +5,7 @@ import Chef from '../models/chef.js';
 const router = express.Router();
 
 const assignChef = async () => {
-    const chef = await Chef.findOne().sort({ orderTaken: 1 }); // least busy chef
+const chef = await Chef.findOne().sort({ orderTaken: 1 }); 
     if (!chef) throw new Error('No chefs found');
 
     chef.orderTaken += 1;
@@ -22,7 +22,7 @@ router.post('/order', async (req, res) => {
             return res.status(400).json({ error: 'Missing fields in order data' });
         }
         const maxPrepTime = Math.max(...selectedProducts.map(p => p.preparationTime)) * 60 * 1000;
-        const prepEndTime = new Date(Date.now() + maxPrepTime); // Not saved in DB
+        const prepEndTime = new Date(Date.now() + maxPrepTime); 
 
         const chefs = await Chef.find().sort({ orderTaken: 1 });
 

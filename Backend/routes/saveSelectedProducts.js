@@ -15,7 +15,6 @@ router.get('/selected-products', async(req, res) => {
 
 router.post('/selected-products', async (req, res) => {
     try {
-        // Optional: clear previous selections
         await SelectedProduct.deleteMany(); 
 
         await SelectedProduct.insertMany(req.body);
