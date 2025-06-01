@@ -22,7 +22,7 @@ const __filename = fileURLToPath(import.meta.url);
 dotenv.config();
 // app.use(cors());
 app.use(cors({
-    origin: 'https://food-app-fcb5.onrender.com',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
