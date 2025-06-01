@@ -31,7 +31,7 @@ function Tablesummary() {
                 const dineInProcessing = data.filter(order =>
                     order.dineOption === 'Dine In' && order.status === 'processing'
                 );
-                console.log("Processing Table Numbers:", dineInProcessing.map(o => o.tableNumber)); // ✅ Important!
+                console.log("Processing Table Numbers:", dineInProcessing.map(o => o.tableNumber)); 
                 setOrders(data);
             })
             .catch(err => console.error("Failed to fetch orders:", err));
