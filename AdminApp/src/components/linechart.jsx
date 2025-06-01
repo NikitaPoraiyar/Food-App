@@ -48,7 +48,7 @@ function LineChartComponent() {
     const [chartData, setChartData] = useState(data);
 
     useEffect(() => {
-        fetch(`${import.meta.env.BACKEND_URL}/api/orders/revenue/daily`)
+        fetch('https://food-app-fcb5.onrender.com/api/orders/revenue/daily')
             .then(res => res.json())
             .then(apiData => {
                 const updatedData = data.map(dayObj => {
@@ -78,13 +78,6 @@ function LineChartComponent() {
                         formatter={(value) => [`₹${value}`, 'Revenue']}
                         contentStyle={{ background: 'white', border: 'none', borderRadius: 4 }}
                     />
-                    {/* Background Bars */}
-                    {/* <Customized
-                        component={({ width, height }) => (
-                        <CustomBackground width={width} height={height} data={chartData} />
-                        )}
-                    /> */}
-
                     <Customized
                         layer="below"
                         component={({ width, height }) => (

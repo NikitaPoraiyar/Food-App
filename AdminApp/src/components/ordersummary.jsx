@@ -15,7 +15,7 @@ function ordersummary() {
     useEffect(() => {
         const fetchOrderSummary = async () => {
             try {
-                const response = await fetch(`${import.meta.env.BACKEND_URL}/api/orders/summary`);
+                const response = await fetch('https://food-app-fcb5.onrender.com/api/orders/summary');
                 const data = await response.json();
                 setSummary({
                     dineInOrdersCount: data.dineInOrdersCount,

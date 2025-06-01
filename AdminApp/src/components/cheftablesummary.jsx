@@ -6,7 +6,7 @@ function cheftablesummary() {
     const [chefs, setChefs] = useState([]);
 
     useEffect(() => {
-        fetch(`${import.meta.env.BACKEND_URL}/api/chefs`)
+        fetch('https://food-app-fcb5.onrender.com/api/chefs')
             .then(res => res.json())
             .then(data => setChefs(data))
             .catch(err => console.error("Failed to fetch chefs:", err));

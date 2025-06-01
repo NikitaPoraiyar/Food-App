@@ -14,7 +14,7 @@ function addtable_popup({ setTables, setShowPopup, tables }) {
         };
 
         try {
-            const response = await fetch(`${import.meta.env.BACKEND_URL}/api/tables`, {
+            const response = await fetch('https://food-app-fcb5.onrender.com/api/tables', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newTable)

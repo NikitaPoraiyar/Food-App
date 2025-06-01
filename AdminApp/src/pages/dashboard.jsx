@@ -38,7 +38,7 @@ function dashboard() {
 
 
     useEffect(() => {
-        fetch(`${import.meta.env.BACKEND_URL}/api/orders/summary`)
+        fetch('https://food-app-fcb5.onrender.com/api/orders/summary')
             .then(res => res.json())
             .then(data => setOrderData(data))
             .catch(err => console.error("Failed to fetch order summary:", err));

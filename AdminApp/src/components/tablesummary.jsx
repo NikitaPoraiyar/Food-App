@@ -7,7 +7,7 @@ function Tablesummary() {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`${import.meta.env.BACKEND_URL}/api/tables`)
+        fetch('https://food-app-fcb5.onrender.com/api/tables')
             .then(res => res.json())
             .then(data => {
                 console.log("Tables:", data);
@@ -24,7 +24,7 @@ function Tablesummary() {
     }, []);
 
     const fetchOrders = () => {
-        fetch(`${import.meta.env.BACKEND_URL}/api/orders`)
+        fetch('https://food-app-fcb5.onrender.com/api/orders')
             .then(res => res.json())
             .then(data => {
                 console.log("Orders fetched:", data); 

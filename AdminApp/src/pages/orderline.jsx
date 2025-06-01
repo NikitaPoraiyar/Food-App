@@ -8,7 +8,7 @@ function orderline() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BACKEND_URL}/api/orders`)
+    fetch('https://food-app-fcb5.onrender.com/api/orders')
         .then(res => res.json())
         .then(data => setOrders(data))
         .catch(err => console.error("Failed to fetch orders:", err));

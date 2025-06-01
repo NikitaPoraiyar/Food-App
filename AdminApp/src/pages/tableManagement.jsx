@@ -8,7 +8,7 @@ import AddTablePopup from '../components/addtable_popup';
 function tableManagement() {
 
   useEffect(() => {
-    fetch(`${import.meta.env.BACKEND_URL}/api/tables`)
+    fetch('https://food-app-fcb5.onrender.com/api/tables')
       .then(res => res.json())
       .then(data => setTables(data))
       .catch(err => console.error("Failed to fetch tables:", err));
@@ -20,7 +20,7 @@ function tableManagement() {
 
   const handleDelete = async (idToDelete) => {
   try {
-    const response = await fetch(`${import.meta.env.BACKEND_URL}/api/tables/${idToDelete}`, {
+    const response = await fetch(`https://food-app-fcb5.onrender.com/api/tables/${idToDelete}`, {
       method: 'DELETE',
     });
 
