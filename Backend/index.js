@@ -23,7 +23,9 @@ const __filename = fileURLToPath(import.meta.url);
 dotenv.config();
 // app.use(cors());
 app.use(cors({
-    origin: ['https://food-eg4entyfw-nikita-poraiyars-projects.vercel.app'],
+    origin: ['https://food-eg4entyfw-nikita-poraiyars-projects.vercel.app',
+        'https://admin-food-app.vercel.app'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
