@@ -79,7 +79,7 @@ function landingApp() {
             .catch((error) => {
                 console.error('Error fetching product data:', error);
             });
-        console.log('Backend URL:', import.meta.env.VITE_BACKEND_URL);
+        axios.get('https://food-app-fcb5.onrender.com/api/products')
     }, []);
 
     const handleCategoryClick = (category) => {
